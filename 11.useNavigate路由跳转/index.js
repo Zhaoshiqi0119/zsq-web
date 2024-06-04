@@ -7,7 +7,6 @@ import App from './App'
 //引入router
 import { BrowserRouter } from 'react-router-dom'
 
-
 ReactDOM.render(
     <BrowserRouter>
         <App/>
