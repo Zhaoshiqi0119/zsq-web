@@ -13,9 +13,9 @@ import { Navigate } from "react-router-dom";
 import React from "react";
 import warning from "antd/es/_util/warning.js";
 
-const Main = React.lazy(() => import("../pages/main/main.jsx"));
-const Login = React.lazy(() => import("../pages/user/Login.jsx"));
-const Register = React.lazy(() => import("../pages/user/Register.jsx"));
+const Main = React.lazy(() => import("../pages/main/main.tsx"));
+const Login = React.lazy(() => import("../pages/user/Login.tsx"));
+const Register = React.lazy(() => import("../pages/user/Register.tsx"));
 const About = React.lazy(() => import("../pages/main/childRouterTest/About.jsx"));
 const Detail = React.lazy(() => import("../pages/main/childRouterTest/Detail.jsx"));
 const Home = React.lazy(() => import("../pages/main/test/Home.jsx"));
@@ -26,6 +26,7 @@ const UseEffectTest = React.lazy(() => import("../pages/main/hooks/UseEffectTest
 const UseStateTest = React.lazy(() => import("../pages/main/hooks/UseStateTest.jsx"));
 const Counter = React.lazy(() => import("../pages/main/counter/Counter.jsx"));
 const Search = React.lazy(() => import("../pages/main/searchComponent/Search.jsx"));
+const FileDownload = React.lazy(() => import("../pages/main/fileDownload/FileDownload.tsx"))
 export default [
     {
         path: "/login",
@@ -73,6 +74,9 @@ export default [
             },{
                 path:"search",
                 element:<Search></Search>
+            },{
+                path:'FileDownload',
+                element:<FileDownload></FileDownload>
             }
         ]
     }, {

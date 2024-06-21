@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRecoilState } from 'recoil'
 import {counter} from '../../../store/couter.js'
-import CountShow from './CountShow'
+import CountShow from './CountShow.jsx'
 export default function Counter() {
   const [countData,setCountData] = useRecoilState(counter)
   console.log(countData)//countData输出的就是被管理的数据，分别为count和title
